@@ -53,10 +53,6 @@ src/plugins/coherence_upnp/coherence_upnp.py
 src/plugins/im-status/totem-im-status.c
 [type: gettext/ini]src/plugins/gromit/gromit.plugin.in
 src/plugins/gromit/totem-gromit.c
-[type: gettext/ini]src/plugins/iplayer/iplayer.plugin.in
-src/plugins/iplayer/iplayer.py
-src/plugins/iplayer/iplayer2.py
-[type: gettext/glade]src/plugins/iplayer/iplayer.ui
 [type: gettext/glade]src/plugins/jamendo/jamendo.ui
 [type: gettext/ini]src/plugins/jamendo/jamendo.plugin.in
 src/plugins/jamendo/jamendo.py
