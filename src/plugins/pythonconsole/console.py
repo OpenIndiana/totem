@@ -36,6 +36,11 @@ import string
 import sys
 import re
 import traceback
+import gi
+
+gi.require_version('Gtk', '3.0')
+gi.require_version('Pango', '1.0')
+
 from gi.repository import GLib, Pango, Gtk, Gdk # pylint: disable-msg=E0611
 
 class PythonConsole(Gtk.ScrolledWindow):
