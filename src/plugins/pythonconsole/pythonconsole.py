@@ -45,7 +45,7 @@ from gi.repository import Gio # pylint: disable-msg=E0611
 
 from console import PythonConsole, OutFile
 
-__all__ = ('PythonConsole', 'OutFile') # pylint: disable-msg=E0603
+__all__ = ('PythonConsolePlugin', 'PythonConsole', 'OutFile') # pylint: disable=E0603
 
 try:
     import rpdb2
