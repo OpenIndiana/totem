@@ -802,6 +802,10 @@ int main (int argc, char *argv[])
 	options = bacon_video_widget_get_option_group ();
 	g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);
 	g_option_context_add_group (context, options);
+
+	options = gtk_get_option_group(TRUE);
+	g_option_context_add_group (context, options);
+
 #ifndef THUMB_DEBUG
 	g_type_init ();
 #else
