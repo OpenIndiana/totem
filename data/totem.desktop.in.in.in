@@ -1,6 +1,8 @@
 [Desktop Entry]
-_Name=Movie Player
-_Comment=Play movies and songs
+# SUN_BRANDING
+_Name=Totem Movie Player
+# SUN_BRANDING
+_Comment=Play movies and music
 Exec=totem %U
 Icon=totem
 Terminal=false
