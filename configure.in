@@ -119,7 +119,11 @@ EXTRA_BACKEND_LIBS="-lgstinterfaces-$GST_MAJORMINOR -lgstvideo-$GST_MAJORMINOR -
 
 dnl Check for required plugins
 gst010_toolsdir=`$PKG_CONFIG --variable=toolsdir gstreamer-0.10`
-gst010_inspect="$gst010_toolsdir/gst-inspect-0.10"
+if [ -x "$gst010_toolsdir/gst-inspect-0.10" ]; then
+  gst010_inspect="$gst010_toolsdir/gst-inspect-0.10"
+else
+  gst010_inspect="$gst010_toolsdir/gst-inspect"
+fi
 
 dnl Give error and exit if we don't have the gst_inspect tool
 AC_MSG_CHECKING([GStreamer 0.10 inspection tool])
