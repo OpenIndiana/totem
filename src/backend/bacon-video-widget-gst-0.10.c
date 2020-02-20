@@ -4770,6 +4770,11 @@ bacon_video_widget_get_volume (BaconVideoWidget * bvw)
   g_return_val_if_fail (BACON_IS_VIDEO_WIDGET (bvw), 0.0);
   g_return_val_if_fail (GST_IS_ELEMENT (bvw->priv->play), 0.0);
 
+  /* If the value hasn't been loaded, get the value. */
+  if (bvw->priv->volume == -1.0) {
+     notify_volume_idle_cb (bvw);
+  }
+
   return bvw->priv->volume;
 }
 
