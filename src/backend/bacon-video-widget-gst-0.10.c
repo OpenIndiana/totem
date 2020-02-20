@@ -326,6 +326,8 @@ typedef struct {
 
 static void update_tags_delayed_data_destroy (UpdateTagsDelayedData *data);
 
+static gboolean notify_volume_idle_cb (BaconVideoWidget *bvw);
+
 static GtkWidgetClass *parent_class = NULL;
 
 static int bvw_signals[LAST_SIGNAL] = { 0 };
